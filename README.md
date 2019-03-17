@@ -17,4 +17,4 @@ main.py:3: error: Cannot find module named 'foo.bar'
 main.py:3: note: See https://mypy.readthedocs.io/en/latest/running_mypy.html#missing-imports
 ```
 
-...
+Need some sanity checking, but maybe this should be added to https://github.com/python/mypy/issues/1645
