@@ -12,9 +12,8 @@ It will print `1` as expected.
 Now run 
 
 ```
-$ mypy main.py
-main.py:3: error: Cannot find module named 'foo.bar'
-main.py:3: note: See https://mypy.readthedocs.io/en/latest/running_mypy.html#missing-imports
+$ mypy --namespace-packages main.py
+main.py:3: error: Module 'foo.bar' has no attribute 'Baz'
 ```
 
 Adding `__init__.py` to the `foo` directory would fix this.
